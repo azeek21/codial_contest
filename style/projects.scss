@@ -1,0 +1,16 @@
+@import "variables";
+
+.projects {
+  margin-top: 140px;
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    row-gap: 70px;
+  }
+}

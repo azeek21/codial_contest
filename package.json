@@ -1,9 +1,12 @@
 {
   "scripts": {
     "dev": "sass --watch style/main.scss style.css",
-    "build": "sass style/ style.css"
+    "build": "sass style/main.scss style.css & npx postcss *.css --use autoprefixer -d ./"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
     "sass": "^1.63.6"
   }
 }

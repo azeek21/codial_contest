@@ -1,0 +1,100 @@
+@import "variables";
+
+.card {
+  height: 500px;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-size: 24px !important;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    overflow: hidden;
+    // &:hover {
+    //   transform: scale(1.05);
+    // }
+    &__container {
+      overflow: hidden;
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__info {
+    margin-top: 20px;
+  }
+  &__tags {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+
+    &__item {
+    }
+  }
+
+  &__actions {
+    position: absolute;
+    height: 0;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgba($BLACK, 0.8);
+    &__mobile {
+      display: none;
+      align-items: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+  }
+  &:hover {
+    & .card__actions {
+      height: 100%;
+      visibility: visible;
+    }
+  }
+}
+
+/*  CARD EXAMPLE
+
+          <div class="card">
+            <div class="card__img__container">
+              <div class="card__actions">
+                <button class="card__button button underlined">
+                  view project
+                </button>
+                <button class="card__button button underlined">
+                  view code
+                </button>
+              </div>
+
+              <img
+                class="card__img"
+                src="./images/showcase-design.png"
+                alt="design protfolio"
+              />
+            </div>
+            <div class="card__info">
+              <h3 class="card__title T_heading_l">DESIGN PORTFOLIO</h3>
+              <div class="card__tags">
+                <span class="card__tags__item">HTML</span>
+                <span class="card__tags__item">CSS</span>
+              </div>
+            </div>
+
+            <div class="card__actions__mobile">
+              <button class="card__button button underlined">
+                view project
+              </button>
+              <button class="card__button button underlined">view code</button>
+            </div>
+          </div>
+*/

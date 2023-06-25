@@ -1,0 +1,8 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__link {
+    margin-right: 32px;
+  }
+}

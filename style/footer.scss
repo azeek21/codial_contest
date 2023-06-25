@@ -1,0 +1,78 @@
+@import "variables";
+
+.footer {
+  background-color: $GRAY_DARK;
+  height: 100vh;
+  max-height: 675px;
+  margin-top: 139px;
+  background-image: url(./images/oval.svg);
+  background-repeat: no-repeat;
+  background-size: 530px 110px;
+  background-position: -10% 70%;
+  &__main {
+    padding-top: 84px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__nav {
+    margin-top: 92px;
+    border-top: 2px solid $WHITE;
+  }
+  &__text {
+    width: 80%;
+  }
+}
+
+.form {
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  &__input,
+  &__textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $WHITE;
+    width: 445px;
+    cursor: text;
+    outline: none;
+    padding: 16px 24px;
+    font-size: 16px;
+    &:invalid {
+      border-bottom: 1px solid $RED;
+    }
+    &:invalid ~ .form__message {
+      display: block;
+    }
+    &:invalid ~ .form__error__img {
+      display: block;
+    }
+  }
+  & label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  ::placeholder {
+    color: $GRAY;
+  }
+  &__message {
+    margin-left: auto;
+    display: none;
+    color: $RED;
+  }
+
+  &__button {
+    max-width: max-content;
+    margin-left: auto;
+  }
+
+  &__error__img {
+    position: absolute;
+    right: 0;
+    display: none;
+    top: 20px;
+  }
+}

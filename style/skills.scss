@@ -1,0 +1,16 @@
+@import "variables";
+.skills {
+  background-image: url(./images/oval-skills.svg);
+  background-repeat: no-repeat;
+  background-size: 530px 129px;
+  background-position: 120% 100%;
+  margin-top: 104px;
+  & .container {
+    border-top: 1px solid $WHITE;
+    padding-top: 72px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+    row-gap: 58px;
+  }
+}

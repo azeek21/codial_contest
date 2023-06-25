@@ -1,0 +1,38 @@
+.header {
+  height: 100vh;
+  max-height: 720px;
+  background-image: url(./images/oval.svg);
+  background-repeat: no-repeat;
+  background-position: -5% 20%;
+  background-size: 530px 129px;
+  &__nav {
+    padding-top: 39px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  & > .container {
+    background-image: url(./images/circle.svg), url(./images/main-char.png);
+    background-repeat: no-repeat;
+    background-size: 129px 129px, auto 100%;
+    background-position: 60% 90%, top right;
+  }
+}
+
+.hero {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  &__title {
+    width: 70%;
+    margin-top: 100px;
+  }
+  &__text {
+    width: 40%;
+  }
+  &__button {
+    margin-top: 66px;
+  }
+}

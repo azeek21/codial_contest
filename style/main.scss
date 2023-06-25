@@ -1,5 +1,81 @@
-*,*::after, *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import "variables";
+@import "card";
+@import "button";
+@import "header";
+@import "socials";
+@import "lines";
+@import "skills";
+@import "projects";
+@import "footer";
+// VARIABLES
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  color: $WHITE;
+  transition: 300ms ease-in-out;
+}
+
+::placeholder {
+  color: red;
+}
+
+body {
+  background-color: $BLACK;
+}
+
+::placeholder {
+  color: $GRAY_DARK;
+}
+
+a {
+  text-decoration: none;
+  text-transform: none;
+}
+
+.T_heading_xl {
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -2.5px;
+}
+
+.T_heading_l {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -1.5px;
+}
+
+.T_heading_m {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.T_body_l {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+span {
+  font-size: inherit;
+  color: inherit;
+}
+
+.underlined {
+  border-bottom: 2px solid $GREEN;
 }

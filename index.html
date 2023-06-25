@@ -1,12 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>CONTEST</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <a href="#" class="header__logo">
+            <img class="header__logo__img" src="./images/logo.svg" alt="LOGO" />
+          </a>
+          <div class="socials">
+            <a href="https://github.com/azeek21" class="socials__link">
+              <img
+                src="./images/github-white.svg"
+                alt="github link"
+                class="socials__img"
+              />
+            </a>
+            <a href="https://abdulaziz.codes" class="socials__link">
+              <img
+                src="./images/unknown-white.svg"
+                alt="unknown link"
+                class="socials__img"
+              />
+            </a>
+            <a href="https://abdulaziz.codes" class="socials__link">
+              <img
+                src="./images/linkedin-white.svg"
+                alt="linkedin link"
+                class="socials__img"
+              />
+            </a>
+
+            <a href="https://abdulaziz.codes" class="socials__link">
+              <img
+                src="./images/twitter-white.svg"
+                alt="twitter link"
+                class="socials__img"
+              />
+            </a>
+          </div>
+        </nav>
+        <div class="hero">
+          <h1 class="T_heading_xl hero__title">
+            Nice to meet you! I’m <span class="underlined">Adam Keyes.</span>
+          </h1>
+
+          <p class="hero__text T_body_l">
+            Based in the UK, I’m a front-end developer passionate about building
+            accessible web apps that users love.
+          </p>
+
+          <button class="hero__button button underlined">CONTACT ME</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="skills">
+      <div class="container">
+        <div class="skills_item">
+          <a href="#" class="skills_link">
+            <h2 class="skills__item__title T_heading_l">HTML</h2>
+          </a>
+          <p class="skills__item_text T_body_l">4 years of experience</p>
+        </div>
+
+        <div class="skills_item">
+          <a href="#" class="skills_link">
+            <h2 class="skills__item__title T_heading_l">CSS</h2>
+          </a>
+          <p class="skills__item_text T_body_l">4 years of experience</p>
+        </div>
+
+        <div class="skills_item">
+          <a href="#" class="skills_link">
+            <h2 class="skills__item__title T_heading_l">Javascript</h2>
+          </a>
+          <p class="skills__item_text T_body_l">4 years of experience</p>
+        </div>
+
+        <div class="skills_item">
+          <a href="#" class="skills_link">
+            <h2 class="skills__item__title T_heading_l">Accessibility</h2>
+          </a>
+          <p class="skills__item_text T_body_l">4 years of experience</p>
+        </div>
+
+        <div class="skills_item">
+          <a href="#" class="skills_link">
+            <h2 class="skills__item__title T_heading_l">React</h2>
+          </a>
+          <p class="skills__item_text T_body_l">4 years of experience</p>
+        </div>
+
+        <div class="skills_item">
+          <a href="#" class="skills_link">
+            <h2 class="skills__item__title T_heading_l">SASS</h2>
+          </a>
+          <p class="skills__item_text T_body_l">4 years of experience</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="projects">
+        <nav class="projects__nav">
+          <h1 class="T_heading_xl">Projects</h1>
+          <button class="projects__button button underlined">CONTACT ME</button>
+        </nav>
+
+        <div class="projects__items">
+          <div class="card">
+            <div class="card__img__container">
+              <div class="card__actions">
+                <button class="card__button button underlined">
+                  view project
+                </button>
+                <button class="card__button button underlined">
+                  view code
+                </button>
+              </div>
+
+              <img
+                class="card__img"
+                src="./images/showcase-design.png"
+                alt="design protfolio"
+              />
+            </div>
+            <div class="card__info">
+              <h3 class="card__title T_heading_l">DESIGN PORTFOLIO</h3>
+              <div class="card__tags">
+                <span class="card__tags__item">HTML</span>
+                <span class="card__tags__item">CSS</span>
+              </div>
+            </div>
+
+            <div class="card__actions__mobile">
+              <button class="card__button button underlined">
+                view project
+              </button>
+              <button class="card__button button underlined">view code</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img__container">
+              <div class="card__actions">
+                <button class="card__button button underlined">
+                  view project
+                </button>
+                <button class="card__button button underlined">
+                  view code
+                </button>
+              </div>
+
+              <img
+                class="card__img"
+                src="./images/showcase-elarning.png"
+                alt="design protfolio"
+              />
+            </div>
+            <div class="card__info">
+              <h3 class="card__title T_heading_l">E-LEARING LANDING PAGE</h3>
+              <div class="card__tags">
+                <span class="card__tags__item">HTML</span>
+                <span class="card__tags__item">CSS</span>
+              </div>
+            </div>
+
+            <div class="card__actions__mobile">
+              <button class="card__button button underlined">
+                view project
+              </button>
+              <button class="card__button button underlined">view code</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img__container">
+              <div class="card__actions">
+                <button class="card__button button underlined">
+                  view project
+                </button>
+                <button class="card__button button underlined">
+                  view code
+                </button>
+              </div>
+
+              <img
+                class="card__img"
+                src="./images/showcase-todo.png"
+                alt="design protfolio"
+              />
+            </div>
+            <div class="card__info">
+              <h3 class="card__title T_heading_l">TODO WEB APP</h3>
+              <div class="card__tags">
+                <span class="card__tags__item">HTML</span>
+                <span class="card__tags__item">CSS</span>
+                <span class="card__tags__item">Javascript</span>
+              </div>
+            </div>
+
+            <div class="card__actions__mobile">
+              <button class="card__button button underlined">
+                view project
+              </button>
+              <button class="card__button button underlined">view code</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img__container">
+              <div class="card__actions">
+                <button class="card__button button underlined">
+                  view project
+                </button>
+                <button class="card__button button underlined">
+                  view code
+                </button>
+              </div>
+
+              <img
+                class="card__img"
+                src="./images/showcase-entertainment.png"
+                alt="design protfolio"
+              />
+            </div>
+            <div class="card__info">
+              <h3 class="card__title T_heading_l">ENTERTAINMENT WEB APP</h3>
+              <div class="card__tags">
+                <span class="card__tags__item">HTML</span>
+                <span class="card__tags__item">CSS</span>
+                <span class="card__tags__item">Javascript</span>
+              </div>
+            </div>
+
+            <div class="card__actions__mobile">
+              <button class="card__button button underlined">
+                view project
+              </button>
+              <button class="card__button button underlined">view code</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img__container">
+              <div class="card__actions">
+                <button class="card__button button underlined">
+                  view project
+                </button>
+                <button class="card__button button underlined">
+                  view code
+                </button>
+              </div>
+
+              <img
+                class="card__img"
+                src="./images/showcase-memorygame.png"
+                alt="design protfolio"
+              />
+            </div>
+            <div class="card__info">
+              <h3 class="card__title T_heading_l">MEMORY GAME</h3>
+              <div class="card__tags">
+                <span class="card__tags__item">HTML</span>
+                <span class="card__tags__item">CSS</span>
+                <span class="card__tags__item">Javascript</span>
+              </div>
+            </div>
+
+            <div class="card__actions__mobile">
+              <button class="card__button button underlined">
+                view project
+              </button>
+              <button class="card__button button underlined">view code</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img__container">
+              <div class="card__actions">
+                <button class="card__button button underlined">
+                  view project
+                </button>
+                <button class="card__button button underlined">
+                  view code
+                </button>
+              </div>
+
+              <img
+                class="card__img"
+                src="./images/showcase-gallery.png"
+                alt="design protfolio"
+              />
+            </div>
+            <div class="card__info">
+              <h3 class="card__title T_heading_l">ART GALLERY SHOWCASE</h3>
+              <div class="card__tags">
+                <span class="card__tags__item">HTML</span>
+                <span class="card__tags__item">CSS</span>
+                <span class="card__tags__item">Javascript</span>
+              </div>
+            </div>
+
+            <div class="card__actions__mobile">
+              <button class="card__button button underlined">
+                view project
+              </button>
+              <button class="card__button button underlined">view code</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__main">
+          <div class="footer__info">
+            <h1 class="T_heading_xl">Contact</h1>
+            <p class="footer__text T_body_l">
+              I would love to hear about your project and how I could help.
+              Please fill in the form, and I’ll get back to you as soon as
+              possible.
+            </p>
+          </div>
+
+          <form
+            class="form"
+            action="#"
+            method="post"
+            onsubmit="(event) => {event.preventDefault()}"
+          >
+            <label for="form_name">
+              <input
+                class="form__input"
+                type="text"
+                name="name"
+                id="form_name"
+                placeholder="NAME"
+              />
+              <span class="form__message">Sorry, invalid format here</span>
+              <img
+                class="form__error__img"
+                src="./images/error.svg"
+                alt="ERROR"
+              />
+            </label>
+            <label for="form_email">
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                id="form_email"
+                placeholder="EMAIL"
+              />
+              <img
+                class="form__error__img"
+                src="./images/error.svg"
+                alt="ERROR"
+              />
+              <span class="form__message">Sorry, invalid format here</span>
+            </label>
+            <label for="form_textarea">
+              <textarea
+                class="form__textarea"
+                name="message"
+                id="form_textarea"
+                cols="30"
+                rows="5"
+                placeholder="MESSAGE"
+              >
+              </textarea>
+              <span class="form__message">Sorry, invalid format here</span>
+              <img
+                class="form__error__img"
+                src="./images/error.svg"
+                alt="ERROR"
+              />
+            </label>
+
+            <button class="form__button button underlined">CONTACT ME</button>
+          </form>
+        </div>
+        <nav class="header__nav footer__nav">
+          <a href="#" class="header__logo">
+            <img class="header__logo__img" src="./images/logo.svg" alt="LOGO" />
+          </a>
+          <div class="socials">
+            <a href="https://github.com/azeek21" class="socials__link">
+              <img
+                src="./images/github-white.svg"
+                alt="github link"
+                class="socials__img"
+              />
+            </a>
+            <a href="https://abdulaziz.codes" class="socials__link">
+              <img
+                src="./images/unknown-white.svg"
+                alt="unknown link"
+                class="socials__img"
+              />
+            </a>
+            <a href="https://abdulaziz.codes" class="socials__link">
+              <img
+                src="./images/linkedin-white.svg"
+                alt="linkedin link"
+                class="socials__img"
+              />
+            </a>
+
+            <a href="https://abdulaziz.codes" class="socials__link">
+              <img
+                src="./images/twitter-white.svg"
+                alt="twitter link"
+                class="socials__img"
+              />
+            </a>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
